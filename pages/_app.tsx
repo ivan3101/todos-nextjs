@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import App from "next/app";
-import {Head} from "next/document";
 import ResetStyles from "../components/reset-styles/reset-styles";
+import Head from "next/head";
 
 class MyApp extends App {
   render() {
