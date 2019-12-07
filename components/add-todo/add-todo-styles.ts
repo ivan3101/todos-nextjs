@@ -39,7 +39,10 @@ const AddTodoStyles = styled.div`
   }
   
   @media (min-width: 768px) {
-    flex-direction: row;
+    
+    form {
+      flex-direction: row; 
+    } 
     
     input {
       width: 80%;
