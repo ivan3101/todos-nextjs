@@ -20,7 +20,7 @@ const AddTodoStyles = styled.div`
   }
   
   button {
-     padding: 0.75rem;
+     padding: 1rem;
      background-color: #007eb4;
      border: 0;
      color: #ffffff;
@@ -45,7 +45,7 @@ const AddTodoStyles = styled.div`
     button {
       margin-left: auto;
       width: 15%;
-      padding: 0 1rem;
+      padding: 0 0.75rem;
     }
   }
 `;
