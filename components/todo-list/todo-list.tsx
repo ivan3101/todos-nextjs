@@ -1,10 +1,21 @@
 import React from 'react';
 import Todo from "../todo/todo";
 
-const TodoList = () => {
+interface TodoListProps {
+  todos: string[];
+  removeTodo: (id: string) => void;
+}
+
+const TodoList = ({ todos, removeTodo }: TodoListProps) => {
   return (
     <ul>
-      <Todo/>
+      {todos && !!todos.length && todos.map((todo, index) => (
+        <Todo
+          text={todo}
+          key={index}
+          onRemove={() => removeTodo(index.toString())}
+        />
+      ))}
     </ul>
   );
 };

@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 const AddTodoStyles = styled.div`
   padding: 1rem 1.25rem; 
-  display: flex;
-  flex-direction: column;
   border-bottom: 2px solid #dddddd;
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   
   input {
     font-size: 15px;
