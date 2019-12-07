@@ -1,5 +1,5 @@
 import {ServerStyleSheet} from "styled-components";
-import Document, {DocumentContext, Head, Main, NextScript} from "next/document";
+import Document, {DocumentContext, Head, Html, Main, NextScript} from "next/document";
 
 class MyDocument extends Document<any> {
   static async getInitialProps(ctx: DocumentContext) {
@@ -18,20 +18,15 @@ class MyDocument extends Document<any> {
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
-          <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1,viewport-fit=cover"
-          />
-          <title>ToDo List</title>
           {this.props.styleTags}
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
