@@ -7,6 +7,7 @@ const HeaderBarStyles = styled.header`
   z-index: 10;
   
   h1 {
+    color: #007eb4;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
