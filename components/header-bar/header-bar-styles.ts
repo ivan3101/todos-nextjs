@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderBarStyles = styled.header`
   box-shadow: 0 1px 4px #888888; 
-  padding: 20px;
+  padding: 20px 0;
   position: relative;
   z-index: 10;
   
