@@ -1,14 +1,10 @@
 import React from 'react'
-import styled from "styled-components";
-
-const Title = styled.h1`
-  background-color: red;
-`;
+import HeaderBar from "../components/header-bar/header-bar";
 
 const Home = () => (
-  <div>
-    <Title>Hello world from NextJS</Title>
-  </div>
+  <>
+    <HeaderBar/>
+  </>
 );
 
 export default Home
